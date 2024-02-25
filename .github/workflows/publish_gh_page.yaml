@@ -28,9 +28,14 @@ jobs:
         post-cleanup: 'all'
 
     # Build the book
-    - name: Build the book
+    - name: Build HTML
       run: |
         jupyter-book build .
+      shell: micromamba-shell {0}
+
+    - name: Build PDF
+      run: |
+        jupyter-book build --builder pdflatex .
       shell: micromamba-shell {0}
 
     # Upload the book's HTML as an artifact
