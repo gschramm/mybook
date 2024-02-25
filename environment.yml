@@ -1,0 +1,14 @@
+name: mybook
+
+channels:
+- conda-forge
+
+dependencies:
+- python~=3.10
+- parallelproj~=1.7
+- numpy
+- scipy
+- pandas
+- matplotlib
+- jupyter-book~=1.0
+- jupytext~=1.16
