@@ -34,6 +34,7 @@ jobs:
     # Build the book
     - name: Build the book
       run: |
+        mamba activate mybook
         jupyter-book build .
 
     # Upload the book's HTML as an artifact
