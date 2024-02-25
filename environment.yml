@@ -4,7 +4,6 @@ channels:
 - conda-forge
 
 dependencies:
-- python~=3.10
 - parallelproj~=1.7
 - numpy
 - scipy
@@ -12,3 +11,4 @@ dependencies:
 - matplotlib
 - jupyter-book~=1.0
 - jupytext~=1.16
+- texlive-core
