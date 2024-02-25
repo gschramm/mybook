@@ -20,7 +20,7 @@ jobs:
       uses: zauguin/install-texlive@v3
       with:
         packages: >
-          l3build latex latex-bin luatex latex-bin-dev xelatex pdflatex pdftex
+          latex latex-bin xelatex pdflatex pdftex latexmk
 
     - name: Check TeX Live version
       run: |
