@@ -16,12 +16,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-#    # Install dependencies
-#    - name: Set up Python 3.11
-#      uses: actions/setup-python@v4
-#      with:
-#        python-version: 3.11
-
     - name: Set up Micromamba
       uses: mamba-org/setup-micromamba@v1
       with:
@@ -32,10 +26,6 @@ jobs:
           powershell
         cache-environment: true
         post-cleanup: 'all'
-
-#    - name: Install dependencies
-#      run: |
-#        pip install -r requirements.txt
 
     # Build the book
     - name: Build the book
@@ -49,7 +39,7 @@ jobs:
       with:
         path: "_build/html"
 
-#    # Deploy the book's HTML to GitHub Pages
-#    - name: Deploy to GitHub Pages
-#      id: deployment
-#      uses: actions/deploy-pages@v2
+    # Deploy the book's HTML to GitHub Pages
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
