@@ -11,4 +11,3 @@ dependencies:
 - matplotlib
 - jupyter-book~=1.0
 - jupytext~=1.16
-- texlive-core

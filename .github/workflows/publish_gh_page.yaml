@@ -16,6 +16,18 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Install TeX Live
+      uses: zauguin/install-texlive@v3
+      with:
+        packages: >
+          l3build latex latex-bin luatex latex-bin-dev xelatex pdflatex pdftex
+
+    - name: Check TeX Live version
+      run: |
+        latexmk -version
+        pdflatex -version
+        xelatex -version
+
     - name: Set up Micromamba
       uses: mamba-org/setup-micromamba@v1
       with:
