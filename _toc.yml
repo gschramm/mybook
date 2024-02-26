@@ -6,12 +6,12 @@ root: intro
 
 parts:
   - chapters:
-    - file: overview
+    - file: overview/overview
       sections:
-      - file: markdown
-      - file: myst
-    #- file: markdown
-    #- file: myscript
-    #- file: mynotebook
-    #- file: math
+      - file: overview/markdown
+      - file: overview/myst
+    - file: code/overview
+      sections:
+      - file: code/myscript
+      - file: code/mynotebook
     - file: references
