@@ -3,9 +3,15 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: myscript
-- file: mynotebook
-- file: math
-- file: references
+
+parts:
+  - chapters:
+    - file: overview
+      sections:
+      - file: markdown
+      - file: myst
+    #- file: markdown
+    #- file: myscript
+    #- file: mynotebook
+    #- file: math
+    - file: references

@@ -12,7 +12,7 @@ kernelspec:
   name: python3
 ---
 
-# A chapter containing many things
+# MyST markdown incl. math and code
 
 This is some sample text.
 
