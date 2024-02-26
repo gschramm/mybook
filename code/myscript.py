@@ -1,5 +1,5 @@
 # %% [markdown]
-# # Static and animated plots
+# # A pure python script containing plots
 
 # %%
 import numpy as np
