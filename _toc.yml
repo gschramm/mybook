@@ -6,5 +6,6 @@ root: intro
 chapters:
 - file: markdown
 - file: myscript
+- file: mynotebook
 - file: math
 - file: references
