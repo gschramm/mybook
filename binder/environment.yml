@@ -1,0 +1,12 @@
+name: mybook
+
+channels:
+- conda-forge
+
+dependencies:
+- parallelproj~=1.7
+- numpy
+- scipy
+- pandas
+- matplotlib
+- ipython
