@@ -154,7 +154,7 @@ Given $y \in \mathbb R^n$ and linear subspace $S \subset \mathbb R^n$,
 there exists a unique solution to the minimization problem
 
 ```{math}
-\hat y := \argmin_{z \in S} \|y - z\|
+\hat y := \text{argmin}_{z \in S} \|y - z\|
 ```
 
 The minimizer $\hat y$ is the unique vector in $\mathbb R^n$ that satisfies
