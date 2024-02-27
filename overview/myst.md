@@ -167,5 +167,8 @@ The minimizer $\hat y$ is the unique vector in $\mathbb R^n$ that satisfies
 The vector $\hat y$ is called the **orthogonal projection** of $y$ onto $S$.
 ````
 
-
 As stated in {prf:ref}`my-theorem`.
+
+### Embedding a video
+
+![giphy](https://media.giphy.com/media/yoJC2A59OCZHs1LXvW/giphy.gif)
