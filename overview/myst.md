@@ -41,13 +41,84 @@ ax.plot(x,y)
 Random inline math $\alpha=1$ leading to an equation
 
 ```{math}
-:label: eq-one
+:label: eq:one
 \int_0^\alpha f(x) dx = I_\alpha
 ```
-which can be referred to [](eq-one). Here another equation
-without number
+
+see Equation {eq}`eq:one` for details.
+Here another equation without number
 
 $$
   \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
 $$
+
+## MyST markdown features
+
+### Figures and Tables that can be referenced
+
+To reference a figure in your book, first add a figure and ensure that it has both a name as well as a caption associated with it:
+
+```{figure} ../logo.png
+:name: fig:myfig
+
+My figure title.
+```
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non auctor lacus. 
+Sed vitae metus cursus, viverra diam vel, interdum ligula. Curabitur sollicitudin nulla non nulla cursus euismod. 
+
+```{table} My table title
+:name: tab:mytab
+
+| col 1 | col 2 |
+|---|---|
+| 3 | 4 |
+| 1 | 9 |
+| 4 | 2 |
+| 3 | 8 |
+| 2 | 1 |
+```
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non auctor lacus. 
+Sed vitae metus cursus, viverra diam vel, interdum ligula. Curabitur sollicitudin nulla non nulla cursus euismod. 
+
+As shown in {numref}`fig:myfig` and {numref}`tab:mytab`
+
+### Grid of cards
+
+::::{grid}
+:gutter: 3
+
+:::{grid-item-card} One!
+Here's the first card.
+:::
+
+:::{grid-item-card} Two!
+Here's the second card.
+:::
+
+:::{grid-item-card} Three!
+Here's the third card.
+:::
+::::
+
+### Dropdown content
+
+```{dropdown} Here's my dropdown
+And here's my dropdown content
+```
+
+### Tab content
+
+````{tab-set}
+```{tab-item} Tab 1 title
+My first tab
+```
+
+```{tab-item} Tab 2 title
+My second tab with `some code`!
+```
+````
+
+
 
